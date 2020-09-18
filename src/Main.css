@@ -12,5 +12,9 @@ textarea {
 
 /* Declare colors */
 :root {
-    
+    --color-primary:  #7450EE;
+    --color-light: #808080;
+    --color-lighter: #f0f0f0;
+    --color-white: #fff;
+    --color-shadow: rgba(0, 0, 0, 0.4);
 }

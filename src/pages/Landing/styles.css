@@ -1,0 +1,67 @@
+.landing-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    overflow: hidden;
+
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-light));
+}
+
+.landing-container header {
+    height: 100px;
+    width: 100%;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-container .logo-image {
+    height: 70px;
+    margin-left: 100px;
+}
+
+.landing-container .user-buttons {
+    display: inline-flex;
+    justify-content: space-between;
+
+    width: 480px;
+    margin-right: 120px;
+}
+
+.landing-container .user-buttons .btn {
+    width: 220px;
+    height: 66px;
+
+    opacity: 75%;
+
+    border-radius: 33px;
+    border: 3px solid var(--color-white);
+    box-shadow: 0px 3px 6px var(--color-shadow);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    color: var(--color-white);
+    text-shadow: 0px 3px 6px var(--color-shadow);
+
+    display: inline-flex;
+    align-items: center;
+    
+    cursor: pointer;
+    transition: .3s opacity;
+}
+
+.landing-container .user-buttons .btn:hover {
+    opacity: 1;
+}
+
+.landing-container .user-buttons .btn .icon {
+    fill: var(--color-white);
+
+    margin-left: 25px;
+    margin-right: 15px;
+
+    height: 40px;
+    width: 40px;
+}
