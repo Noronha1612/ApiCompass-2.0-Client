@@ -6,6 +6,8 @@
     overflow: hidden;
 
     background: linear-gradient(to bottom, var(--color-primary), var(--color-light));
+
+    z-index: -2;
 }
 
 .landing-container header {
@@ -64,4 +66,156 @@
 
     height: 40px;
     width: 40px;
+}
+
+@media ( max-width: 1040px ) {
+    .landing-container .user-buttons {
+        display: none;
+    }
+}
+
+.landing-container .bg-decoration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+.landing-container .aside-bar {
+    height: 100%;
+    width: 225px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    z-index: 10;
+
+    background: rgba(var(--color-primary-rgb), .9);
+}
+
+.landing-container .aside-bar .logo-aside {
+    width: 95px;
+    height: 95px;
+    margin-top: 50px;
+}
+
+.landing-container .aside-bar .search-box {
+    margin-top: 155px;
+    width: 180px;
+    height: 32px;
+
+    margin-bottom: 128px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 16px;
+
+    background: var(--color-lighter);
+
+    color: var(--color-text-light);
+
+    cursor: text;
+}
+
+.landing-container .aside-bar .search-box .search-icon {
+    height: 24px;
+    width: 24px;
+
+    fill: var(--color-text-light);
+    margin-left: 4px;
+}
+
+.landing-container .search-box input {
+    background: none;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+
+    width: 130px;
+    height: 20px;
+
+    padding-left: 6px;
+
+    border-bottom: 1px solid var(--color-text-light);
+}
+
+.landing-container .aside-container {
+    display: inline-flex;
+    align-items: center;
+
+    opacity: .8;
+
+    cursor: pointer;
+
+    transition: .4s;
+}
+
+.landing-container .aside-container + .aside-container {
+    margin-top: 86px;
+}
+
+.landing-container .aside-container span,
+.landing-container .aside-bar .donate-container span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+    color: var(--color-white);
+
+    transition: .4s;
+}
+
+.landing-container .aside-container .aside-icon {
+    fill: var(--color-white);
+    margin-right: 12px;
+
+    transition: .25s;
+}
+
+.landing-container .aside-container:hover {
+    opacity: 1;
+}
+
+.landing-container .aside-container:hover .aside-icon {
+    margin-right: 8px;
+}
+
+.landing-container .aside-bar .donate-container {
+    display: flex;
+    align-items: center;
+
+    margin-top: 290px;
+
+    background: none;
+    border: 2px solid var(--color-white);
+    border-radius: 24px;
+
+    opacity: .8;
+
+    transition: .3s;
+    cursor: pointer;
+
+    padding: 6px 12px;
+}
+
+.landing-container .aside-bar .donate-container:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.landing-container .aside-bar .donate-container .paypal-icon {
+    color: var(--color-white);
+
+    margin-right: 12px;
+    
+    width: 22px;
+    height: 26px;
 }

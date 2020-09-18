@@ -13,8 +13,14 @@ textarea {
 /* Declare colors */
 :root {
     --color-primary:  #7450EE;
+
+    --color-primary-rgb: 84, 36, 155;
+
+    --color-aside-bg: #54249B;
+
     --color-light: #808080;
     --color-lighter: #f0f0f0;
     --color-white: #fff;
     --color-shadow: rgba(0, 0, 0, 0.4);
+    --color-text-light: #434343;
 }
