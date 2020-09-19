@@ -1,6 +1,7 @@
 import React from 'react';
 
 import logo_landing from '../../assets/logo-landing.png';
+import mainLogo from '../../assets/logo.png';
 import { ReactComponent as LogoIcon } from '../../assets/icons/login.svg';
 import { ReactComponent as RegisterIcon } from '../../assets/icons/register.svg';
 import { ReactComponent as BgDecoration } from '../../assets/icons/bg-decoration.svg';
@@ -54,6 +55,14 @@ const Landing: React.FC = () => {
             </div>
 
         </aside>
+
+        <main className="main-content">
+            <img src={mainLogo} alt="API Compass"/>
+            <div className="content">
+                <h1>The easiest way to discover new apis</h1>
+                <h3>The API Compass aims to facilitate the search of public APIs arround the world. feel free to register an API that hasn't been registered yet!</h3>
+            </div>
+        </main>
 
         <BgDecoration className="bg-decoration" />
     </div>
