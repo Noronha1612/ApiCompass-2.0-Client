@@ -316,3 +316,28 @@
 .landing-container .main-content .content h3 {
     font-size: 30px;
 }
+
+.landing-container .hyperlinks {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+}
+
+.landing-container .hyperlinks span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.75;
+
+    cursor: pointer;
+    transition: .4s;
+}
+
+.landing-container .hyperlinks span:hover {
+    opacity: 1;
+}
+
+.landing-container .hyperlinks span + span {
+    margin-left: 40px;
+}

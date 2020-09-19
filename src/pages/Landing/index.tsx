@@ -64,6 +64,11 @@ const Landing: React.FC = () => {
             </div>
         </main>
 
+        <footer className="hyperlinks">
+            <span className="faq">FAQ</span>
+            <span className="termsandconditions">Terms and Conditions</span>
+        </footer>
+
         <BgDecoration className="bg-decoration" />
     </div>
   );
